@@ -1,6 +1,7 @@
 # Estudo sobre: SPED Fiscal ICMS IPI (EFD ICMS IPI)
 
 Apenas empresas com regime tributário normal (real e lucro presumido) enviam sped icms ipi.
+O Arquivo à ser importado deve ter a extensão .efd.
 
 ## Pre-requisitos
 
