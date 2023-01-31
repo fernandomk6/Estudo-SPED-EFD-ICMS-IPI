@@ -2,6 +2,9 @@
 
 - Apenas empresas com regime tributário normal (real e lucro presumido) enviam sped icms ipi.
 - O Arquivo à ser importado deve ter a extensão .efd.
+- Empresas que tem inscrição estadual, são obrigadas a emitirem sped icms ipi
+
+Sped EDF ICMS IPI, as vezes pode ser chamado apenas de "**sped fiscal**"
 
 ## Pre-requisitos
 
@@ -101,15 +104,17 @@ A estrutura do arquivo sped é dividida em grandes grupos, e esses grupos conté
   - NFe saídas
   - Blocos
     - Bloco B (apresentado apenas para o distrito federal contém 
-    informações sobre as notas fiscais de serviço)
-    - Bloco C
-    - Bloco D
+    informações sobre as notas fiscais de serviço. Serviços tributados pelo iss)
+    - Bloco C (todos os doscumentos fiscais de mercadoria (entradas e saídas), nfe, nfce, cfe e tudo mais)
+    - Bloco D (documentos fiscais de serviços tributados pelo icms: serviços de transporte e serviços
+    de comunicação (frete e "telefone"))
 - Relatórios
   - Livros fiscais
   - Apurações
   - Blocos
-    - Bloco E - icms, ipi, icms st
-    - Bloco G - ciap
+    - Bloco E - icms, ipi, icms st (apuração dos impostos lançados nos documentos fiscais. 
+    Valor total dos impostos no mês)
+    - Bloco G - ciap (controle do icms do ativo permanente)
     - Bloco H - inventário
     - Bloco K - produção e estoque
 - Configurações
@@ -130,3 +135,5 @@ Estrutura em ordem:
 - Bloco 1: Informações gerais
 - Bloco B: Informações do ISS
 
+Para mais informações sobre a estrutura dos blocos, e do arquivo, veja o leiaute
+que está disponível na pasta modelos.
